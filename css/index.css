@@ -514,9 +514,10 @@ li a:hover {
         background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
         backdrop-filter: blur(10px); /* Aplicar desenfoque */
         width: 100%;
-        height: 150vh;
+        height: 100vh;
         position: absolute;
         display: flex;
+        justify-content: center; /* Centra los elementos en el eje vertical */
         flex-direction: column;
         text-align: center;
         top: 100%;
