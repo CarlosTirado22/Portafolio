@@ -330,6 +330,11 @@ h3{
     margin-bottom: 15px;
 }
 
+.in{
+    margin: 5px;
+    padding: 10px;
+}
+
 .top-header .acerca{
     font-size: 3em;
     font-weight: 600;
@@ -608,12 +613,25 @@ h3{
         height: 100vh;
         position: absolute;
         display: flex;
-        justify-content: center; /* Centra los elementos en el eje vertical */
+        /* justify-content: center;  Centra los elementos en el eje vertical  */
         flex-direction: column;
         text-align: center;
         top: 100%;
         right: 120%;
         z-index: 100;
+    }
+
+    ul li{
+        margin-top: 60px;
+    }
+
+    ul li a{
+        font-size: 2em;
+    }
+
+    .in {
+        margin: 15px;
+        padding: 45px;
     }
 
     .porta{
@@ -691,4 +709,16 @@ h3{
         font-size: 15em;
         background: #000;
     }
+
+    .col .skills-box h3{
+        width: 100%;
+        margin-left: -35%;
+    }
+
+    .skills-box span{
+        width: 100%;
+        margin-left: -35%;
+        padding: 5px;
+    }
+
 }
