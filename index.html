@@ -29,11 +29,10 @@
                     </div>
                 </label>
                 <ul>
-                    <li><a href="#home" style="--navAni:1">Home</a></li>
-                    <li><a href="#portfolio" style="--navAni:2">Proyectos</a></li>
-                    <li><a href="#" style="--navAni:3">Skills</a></li>
-                    <li><a href="#" style="--navAni:4">Portfolio</a></li>
-                    <li><a href="#" style="--navAni:5">Contact</a></li>
+                    <li><a href="#home" style="--navAni:1" class="nav-link">Home</a></li>
+                    <li><a href="#about" style="--navAni:2" class="nav-link">Acerca de mi</a></li>
+                    <li><a href="#portfolio" style="--navAni:3" class="nav-link">Proyectos</a></li>
+                    <li><a href="#" style="--navAni:4" class="nav-link">Portfolio</a></li>
                 </ul>
                 <label class="mode">
                     <input type="checkbox" id="darkModeToggle">
@@ -50,7 +49,7 @@
                     <div class="texto">
                         <p class="parrafo">Soy <span class="typedText">Desarrollador</span></p>
                     </div>
-                    <p class="front">Desarrollador frontend junior apasionado por crear 
+                    <p class="front">frontend junior apasionado por crear 
                         sitios web visualmente impresionantes y fáciles de usar.
                     </p>  
                     <div class="social">
@@ -64,6 +63,56 @@
                 </div>
             </div>
         </div>
+
+        <!-- CERCA DE MI -->
+        <section class="section" id="about">
+            <div class="top-header">
+              <h1 class="acerca">About Me</h1>
+            </div>
+            <div class="row">
+              <div class="col">
+                  <div class="about-info">
+                      <h3>Mi introducción</h3>
+                      <p>Conozco bien HTML, CSS y Bootstrap, como tambien
+                         los cponceptos basicos de JavaScript y vue, 
+                         lo que me permite implementar funciones 
+                         interactivas. 
+                      </p>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="skills-box">
+                      <div class="skills-header">
+                          <h3>Frontend</h3>
+                      </div>
+                      <div class="skills-list">
+                          <span>HTML</span>
+                          <span>CSS</span>
+                          <span>Bootstrap</span>
+                          <span>JavaScript basico</span>
+                          <span>Vue basico</span>
+                      </div>
+                  </div>
+                  <div class="skills-box">
+                      <div class="skills-header">
+                          <h3>Backend</h3>
+                      </div>
+                      <div class="skills-list">
+                          <span>PHP</span>
+                          <span>Python basico</span>
+                      </div>
+                  </div>
+                  <div class="skills-box">
+                      <div class="skills-header">
+                          <h3>Database</h3>
+                      </div>
+                      <div class="skills-list">
+                          <span>MySQL</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+         </section>
 
         <!-- proyectos -->
         <div class="portafolio" id="portfolio">
@@ -120,6 +169,22 @@
                 body.classList.remove('dark-mode');
                 localStorage.setItem('darkMode', 'disabled');
             }
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var navLinks = document.querySelectorAll(".nav-link");
+
+            navLinks.forEach(function(navLink) {
+                navLink.addEventListener("click", function() {
+                    // Remover la clase 'active' de todos los enlaces
+                    navLinks.forEach(function(link) {
+                        link.classList.remove("active");
+                    });
+
+                    // Agregar la clase 'active' al enlace clicado
+                    this.classList.add("active");
+                });
+            });
         });
     </script>
 
