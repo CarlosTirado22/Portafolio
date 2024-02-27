@@ -492,39 +492,44 @@ li a:hover {
 /*PARA DISPOSITIVOS MOVILES*/
 @media (max-width: 768px){
     .nav {
-        padding: 0 4.9rem;
+        padding: 0 2rem;
+        width: 100%;
+        top: -1px;
+    }
+    
+    header {
         width: 100%;
     }
-
+    
     .main h3 {
         color: #000;
-        width: 100%;
+        width: auto;
     }
     body {
-        width: 100%;
-        height: 100% !important;
-    }
-
-    header {
-        height: auto;
+        width: auto;
+        height: 100%;
     }
 
     ul {
         background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
         backdrop-filter: blur(10px); /* Aplicar desenfoque */
         width: 100%;
-        height: 100vh;
+        height: 150vh;
         position: absolute;
         display: flex;
         flex-direction: column;
         text-align: center;
-        top: 3.7rem;
+        top: 100%;
         right: 120%;
         z-index: 100;
     }
 
     .porta{
         transform: translate(15%, 0);
+    }
+
+    .porta .proyec{
+        font-size: 2em;
     }
 
     .menu {
@@ -555,81 +560,18 @@ li a:hover {
         height: 80%;
         margin: auto;
     }
+   
+    .home .main {
+        width: 100%;
+        margin-left: -50%;
+    }
 
-    .main {
-        margin-top: 2rem;
+    .detail .front{
+        font-size: 25px;
+    }
+
+    .projects{
+        width: 100%;
+        margin-left: 10%;
     }
 }
-
-/* 
- @media screen and (max-width: 1024px) {
-    .nav {
-        padding: 0 4.4rem;
-    }
-
-    .main h3 {
-        color: #000;
-        margin-top: 1rem;
-    }
-} 
-
- @media screen and (max-width: 768px) {
-    .nav {
-        padding: 0 1.6rem;
-    }
-} 
-
- @media screen and (max-width:600px) {
-    body {
-        height: auto;
-    }
-
-    header {
-        height: auto;
-    }
-
-    ul {
-        background: var(--primary-dark);
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        top: 3.4rem;
-        left: -100%;
-        z-index: 111111;
-    }
-
-    .menu {
-        display: block;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #244D61;
-    }
-
-    #click:checked~ul {
-        left: 0%;
-        transition: all 0.3s ease;
-    }
-    .dark-mode .menu {
-        color: var(--primary-color);
-    }
-
-    .dark-mode ul {
-        background: var(--primary-dark);
-    }
-
-    .mode {
-        position: absolute;
-        right: 4rem;
-    }
-    .images {
-        width: 100%;
-        margin: auto;
-    }
-
-    .main {
-        margin-top: 2rem;
-    }
-}  */
