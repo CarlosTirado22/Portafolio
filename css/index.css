@@ -268,9 +268,25 @@ li a:hover {
 .dark-mode .logo a, 
 .dark-mode ul li a, 
 .dark-mode .main span, 
-.dark-mode .main h1 {
+.dark-mode .main h1{
     color: #fff;
 }
+
+.dark-mode .col p{
+   color: #ffffff;
+}
+
+.dark-mode .skills-header h3{
+    color: #fff;
+ }
+ .dark-mode footer{
+    background-color: var(--primary-dark);
+ }
+
+.dark-mode .skills-box span{
+    color: #ffffff;
+ }
+
 .dark-mode ul li a.active, .dark-mode ul li a:hover {
     color: var(--primary-color);
 }
@@ -500,6 +516,42 @@ h3{
 }
 
 
+/* ----- FOOTER BOX ----- */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    background: #F8F8F8;
+    padding-block: 40px 60px;
+}
+.top-footer p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.middle-footer .footer-menu{
+    display: flex;
+}
+.footer_menu_list{
+    list-style: none;
+}
+.footer_menu_list a{
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 500;
+    margin-inline: 20px;
+}
+.footer-social-icons{
+    display: flex;
+    gap: 30px;   
+}
+.bottom-footer{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
 /* Animation */
 @keyframes leftSideAni {
     0% {
@@ -719,6 +771,11 @@ h3{
         width: 100%;
         margin-left: -15%;
         padding: 5px;
+    }
+    
+    footer{
+        margin-left: 20%;
+        text-align: center;
     }
 
 }
