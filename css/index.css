@@ -640,23 +640,35 @@ footer{
 }
 
 /*PARA DISPOSITIVOS MOVILES*/
-@media (max-width: 768px){
+@media (max-width: 828px){
     .nav {
         padding: 0 2rem;
         width: 100%;
-        top: -1px;
+    }
+
+    .page-header .logo a{
+        font-size: 2em;
+    }
+
+    .mainicon .menu i{
+        font-size: 2em;
+        margin-left: 10%;
+    }
+    .mode .bx{
+        font-size: 50px;
+        margin: 10px;
     }
     
     header {
         width: 100%;
+        font-size: 2em;
     }
-    
-    .main h3 {
-        color: #000;
-        width: auto;
+
+    .main h3 span{
+        font-size: 1.8em;
     }
     body {
-        width: auto;
+        width: 100%;
         height: 100%;
     }
 
@@ -684,8 +696,8 @@ footer{
     }
 
     .in {
-        margin: 15px;
-        padding: 45px;
+        margin: 25px;
+        padding: 55px;
     }
 
     .porta{
@@ -694,11 +706,11 @@ footer{
 
     .porta .proyec{
         font-size: 2em;
-        margin-left: -5%;
+        margin-left: -25%;
     }
 
     .top-header .acerca{
-        font-size: 3em;
+        font-size: 5em;
         margin-left: 15%;
     }
 
@@ -732,16 +744,22 @@ footer{
    
     .home .main {
         width: 100%;
-        margin-left: -30%;
+        margin-left: 8%;
+        font-size: 1.2em;
     }
 
     .detail .front{
-        font-size: 25px;
+        font-size: 2.5em;
+    }
+
+    .detail .social a{
+        font-size: 2.8em;
     }
 
     .projects{
         width: 100%;
-        margin-left: 8%;
+        margin-left: 4%;
+        font-size: 1.9em;
     }
 
     .row{
@@ -756,12 +774,210 @@ footer{
     .col{
         width: 100%;
         margin-left: 9%;
+    }
+
+    .row .col .about-info h3{
+        font-size: 3em;
+    }
+
+    .row .col .about-info p{
+        font-size: 2em;
+    }
+
+    .col .skills-box h3{
+        width: 100%;
+        margin-left: -15%;
+        font-size: 2em;
+    }
+
+    .skills-box span{
+        width: 100%;
+        margin-left: -15%;
+        padding: 5px;
+        font-size: 1.9em;
+    }
+    
+    footer{
+        width: 100%;
+        margin-left: 20%;
+        text-align: center;
+        margin: 30px;
+    }
+    .top-footer p{
+        font-size: 2.5em;
+    }
+
+    footer .social a{
+        font-size: 3em;
+    }
+    footer .bottom-footer p{
+        font-size: 1.8em;
+    }
+    footer .bottom-footer a{
+        font-size: 1.2em;
+    }
+
+    .projects .drop {
+        position: relative;
+        width: 560px;
+        height: 550px;
+        box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+            25px 35px 20px rgba(0, 0, 0, 0.05),
+            25px 30px 30px rgba(0, 0, 0, 0.05),
+            inset -20px -20px 25px rgba(255, 255, 255, 0.9);
         
     }
 
-    .row .col .about-info h3 p{
-        font-size: 15em;
-        background: #000;
+    .content a{
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .nav {
+        padding: 0 6.1rem;
+        width: 100%;
+    }
+    
+    header {
+        width: 100%;
+    }
+    .page-header .logo a{
+        font-size: 1.2em;
+    }
+
+    .mainicon .menu i{
+        font-size: 1.2em;
+    }
+    .mode .bx{
+        font-size: 30px;
+    }
+    .detail .name {
+        color: #000;
+        font-size: 1em;
+    }
+    .texto .parrafo{
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    body {
+        width: auto;
+        height: 100%;
+    }
+
+    ul {
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+        backdrop-filter: blur(10px); /* Aplicar desenfoque */
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        /* justify-content: center;  Centra los elementos en el eje vertical  */
+        flex-direction: column;
+        text-align: center;
+        top: 100%;
+        right: 130%;
+        z-index: 100;
+    }
+
+    ul li{
+        margin-top: 60px;
+    }
+
+    ul li a{
+        font-size: 1em;
+    }
+
+    .in {
+        margin: 15px;
+        padding: 45px;
+    }
+
+    .porta{
+        transform: translate(15%, 0);
+    }
+
+    .porta .proyec{
+        font-size: 2em;
+        margin-right: -90%;
+    }
+
+    .top-header .acerca{
+        font-size: 2.5em;
+        margin-left: 35%;
+        width: 120%;
+    }
+
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #244D61;
+    }
+
+    #click:checked~ul {
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+    .dark-mode .menu {
+        color: var(--primary-color);
+    }
+
+    .dark-mode ul {
+        background: var(--primary-dark);
+    }
+
+    .mode {
+        position: absolute;
+        right: 4rem;
+    }
+    .images {
+        width: 100%;
+        height: 80%;
+        margin-left: 25%;
+    }
+   
+    .home .main {
+        width: 100%;
+        margin-left: -50%;
+    }
+
+    .detail .front{
+        font-size: 25px;
+        width: 150%;
+    }
+
+    .detail .social a{
+        font-size: 1.5em;
+    }
+
+    .projects{
+        width: 120%;
+        margin-left: 15%;
+    }
+
+    .row{
+        display: contents;
+    }
+    
+    .section{
+        width: auto;
+        padding: 3% 6%;
+    }
+
+    .col{
+        width: 200%;
+        margin-left: -5%;
+        
+    }
+
+    .row .col .about-info h3{
+        font-size: 2.5em;
+    }
+    .row .col .about-info p{
+        font-size: 1.5em;
     }
 
     .col .skills-box h3{
@@ -776,8 +992,34 @@ footer{
     }
     
     footer{
+        width: 120%;
         margin-left: 20%;
         text-align: center;
     }
+    .top-footer p{
+        font-size: 2.5em;
+    }
+
+    footer .social a{
+        font-size: 2em;
+    }
+    footer .bottom-footer p{
+        font-size: 1.2em;
+    }
+    footer .bottom-footer a{
+        font-size: 1.2em;
+    }
+
+    .projects .drop {
+        position: relative;
+        width: 560px;
+        height: 550px;
+        box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+            25px 35px 20px rgba(0, 0, 0, 0.05),
+            25px 30px 30px rgba(0, 0, 0, 0.05),
+            inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+        
+    }
 
 }
+
