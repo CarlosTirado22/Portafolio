@@ -374,7 +374,7 @@ h3{
 .skills-list span{
     font-size: 14px;
     background: var(--primary-color);
-    color: var(--primary-dark);
+    color: #ffffff;
     padding: 2px 10px;
     border-radius: 5px;
     text-align: center;
@@ -640,6 +640,7 @@ footer{
 }
 
 /*PARA DISPOSITIVOS MOVILES*/
+/* IPHONE 11 */
 @media (max-width: 828px){
     .nav {
         padding: 0 2rem;
@@ -836,34 +837,33 @@ footer{
 
 @media (max-width: 768px){
     .nav {
-        padding: 0 6.1rem;
+        padding: 0 2rem;
         width: 100%;
+    }
+
+    .page-header .logo a{
+        font-size: 1.5em;
+    }
+
+    .mainicon .menu i{
+        font-size: 2em;
+        margin-left: 10%;
+    }
+    .mode .bx{
+        font-size: 40px;
+        margin: 10px;
     }
     
     header {
         width: 100%;
-    }
-    .page-header .logo a{
-        font-size: 1.2em;
-    }
-
-    .mainicon .menu i{
-        font-size: 1.2em;
-    }
-    .mode .bx{
-        font-size: 30px;
-    }
-    .detail .name {
-        color: #000;
         font-size: 1em;
     }
-    .texto .parrafo{
-        width: 100%;
-        font-size: 1.5em;
-    }
 
+    .main h3 span{
+        font-size: 1em;
+    }
     body {
-        width: auto;
+        width: 100%;
         height: 100%;
     }
 
@@ -878,7 +878,7 @@ footer{
         flex-direction: column;
         text-align: center;
         top: 100%;
-        right: 130%;
+        right: 120%;
         z-index: 100;
     }
 
@@ -887,12 +887,12 @@ footer{
     }
 
     ul li a{
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .in {
-        margin: 15px;
-        padding: 45px;
+        margin: 25px;
+        padding: 55px;
     }
 
     .porta{
@@ -900,14 +900,13 @@ footer{
     }
 
     .porta .proyec{
-        font-size: 2em;
-        margin-right: -90%;
+        font-size: 1.5em;
+        margin-left: -10%;
     }
 
     .top-header .acerca{
-        font-size: 2.5em;
-        margin-left: 35%;
-        width: 120%;
+        font-size: 3em;
+        margin-left: 15%;
     }
 
     .menu {
@@ -935,18 +934,17 @@ footer{
     }
     .images {
         width: 100%;
-        height: 80%;
-        margin-left: 25%;
+        height: 90%;
     }
    
     .home .main {
         width: 100%;
-        margin-left: -50%;
+        margin-left: -40%;
+        font-size: 1em;
     }
 
     .detail .front{
-        font-size: 25px;
-        width: 150%;
+        font-size: 1.5em;
     }
 
     .detail .social a{
@@ -954,8 +952,9 @@ footer{
     }
 
     .projects{
-        width: 120%;
-        margin-left: 15%;
+        width: 100%;
+        margin-left: 5%;
+        font-size: 1.2em;
     }
 
     .row{
@@ -968,40 +967,43 @@ footer{
     }
 
     .col{
-        width: 200%;
-        margin-left: -5%;
-        
+        width: 100%;
+        margin-left: 9%;
     }
 
     .row .col .about-info h3{
-        font-size: 2.5em;
+        font-size: 1.8em;
     }
+
     .row .col .about-info p{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .col .skills-box h3{
         width: 100%;
-        margin-left: -15%;
+        margin-left: -55%;
+        font-size: 1.2em;
     }
 
     .skills-box span{
         width: 100%;
-        margin-left: -15%;
+        margin-left: -55%;
         padding: 5px;
+        font-size: .9em;
     }
     
     footer{
-        width: 120%;
+        width: 100%;
         margin-left: 20%;
         text-align: center;
+        margin: 30px;
     }
     .top-footer p{
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 
     footer .social a{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     footer .bottom-footer p{
         font-size: 1.2em;
@@ -1012,13 +1014,17 @@ footer{
 
     .projects .drop {
         position: relative;
-        width: 560px;
-        height: 550px;
+        width: 400px;
+        height: 450px;
         box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
             25px 35px 20px rgba(0, 0, 0, 0.05),
             25px 30px 30px rgba(0, 0, 0, 0.05),
             inset -20px -20px 25px rgba(255, 255, 255, 0.9);
         
+    }
+
+    .content a{
+        margin: 10px;
     }
 
 }
